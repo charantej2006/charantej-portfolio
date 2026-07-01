@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Gowravam Charantej - Computer Science and Engineering Student, Developer, and Machine Learning Enthusiast.">
+  <title>Gowravam Charantej | Portfolio</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Grid & Glowing Spheres -->
+  <div class="grid-floor"></div>
+  <div class="glow-bg glow-top-left"></div>
+  <div class="glow-bg glow-bottom-right"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">Charantej</a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark/light theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        
+        <button class="hamburger" id="hamburgerMenu" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-text scroll-animate">
+            <h4>Welcome to my world</h4>
+            <h1>Hi, I'm <span>Gowravam Charantej</span></h1>
+            <h2>
+              I am a <span id="typewriter"></span><span class="typewriter-cursor"></span>
+            </h2>
+            <p class="hero-description">
+              A detail-oriented Computer Science and Engineering student at JNTUA Kalikiri. I possess a strong foundation in programming, data analysis, and machine learning fundamentals. I love solving complex problems, building clean interfaces, and creating efficient solutions.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+          </div>
+          
+          <div class="hero-visual scroll-animate delay-2">
+            <div class="hero-profile-container">
+              <!-- Background orbital rings -->
+              <div class="hero-orbit-ring"></div>
+              <div class="hero-orbit-ring double"></div>
+              
+              <!-- Central Portrait Card -->
+              <div class="hero-profile-card glass-card">
+                <div class="profile-photo-wrapper">
+                  <img src="profile.jpg" alt="Gowravam Charantej Profile Photo" class="profile-photo">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & EDUCATION SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title scroll-animate">About Me & Education</h2>
+        <div class="about-grid">
+          
+
+          <div class="about-info glass-card scroll-animate">
+            <h3>Who I Am</h3>
+            <p>
+              I am currently pursuing a Bachelor of Technology in Computer Science and Engineering. I have built a solid foundation in programming paradigms, database design, and machine learning structures. I am passionate about applying my technical knowledge to develop software products that are clean, performant, and reliable.
+            </p>
+            <p>
+              I am continuously learning new tools and methodologies to improve my problem-solving speed and code quality. My academic and personal projects reflect my attention to detail and my drive to succeed in collaborative settings.
+            </p>
+            
+            <div class="about-details">
+              <div class="about-detail-item">
+                <span>Email</span>
+                <p>charantej.gowravam26@gmail.com</p>
+              </div>
+              <div class="about-detail-item">
+                <span>Phone</span>
+                <p>9391996958</p>
+              </div>
+              <div class="about-detail-item">
+                <span>Location</span>
+                <p>Nellore, AP, India</p>
+              </div>
+              <div class="about-detail-item">
+                <span>Degree</span>
+                <p>B.Tech, CSE (JNTUA)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-education glass-card scroll-animate delay-2">
+            <h3>Education Timeline</h3>
+            <div class="timeline">
+              
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">09/2023 - 04/2027</div>
+                <h4 class="timeline-title">B.Tech in Computer Science and Engineering</h4>
+                <div class="timeline-subtitle">JNTUA College of Engineering, Kalikiri</div>
+                <p class="timeline-desc">Acquired core concepts of computer science including OS, DBMS, Algorithms, and ML fundamentals. (Current GPA: 7.3)</p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">06/2021 - 04/2023</div>
+                <h4 class="timeline-title">Intermediate (MPC)</h4>
+                <div class="timeline-subtitle">Sri Chaitanya Junior College, Tirupati</div>
+                <p class="timeline-desc">Focused on mathematics, physics, and chemistry. Graduated with exceptional marks. (Marks: 949 / 1000)</p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Graduated 2021</div>
+                <h4 class="timeline-title">Secondary School Certificate</h4>
+                <div class="timeline-subtitle">Sri Sathya Sai High School, Madanapalle</div>
+                <p class="timeline-desc">Completed general high school coursework with high academic distinction. (Marks: 448 / 600)</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title scroll-animate">My Skillset</h2>
+        
+        <div class="skills-tabs scroll-animate">
+          <button class="skills-tab-btn active" data-filter="all">All Skills</button>
+          <button class="skills-tab-btn" data-filter="tech">Technical</button>
+          <button class="skills-tab-btn" data-filter="tools">Tools & DB</button>
+          <button class="skills-tab-btn" data-filter="soft">Professional</button>
+        </div>
+
+        <div class="skills-grid scroll-animate delay-2">
+          <!-- Python -->
+          <div class="skill-card" data-category="tech">
+            <div class="skill-icon-wrapper">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="skill-info">
+              <h4>Python</h4>
+              <span>Scripting & ML</span>
+            </div>
+          </div>
+          <!-- Java -->
+          <div class="skill-card" data-category="tech">
+            <div class="skill-icon-wrapper">
+              <i class="fab fa-java"></i>
+            </div>
+            <div class="skill-info">
+              <h4>Java</h4>
+              <span>OOP & core logic</span>
+            </div>
+          </div>
+          <!-- JavaScript -->
+          <div class="skill-card" data-category="tech">
+            <div class="skill-icon-wrapper">
+              <i class="fab fa-js"></i>
+            </div>
+            <div class="skill-info">
+              <h4>JavaScript</h4>
+              <span>Interactivity</span>
+            </div>
+          </div>
+          <!-- HTML -->
+          <div class="skill-card" data-category="tech">
+            <div class="skill-icon-wrapper">
+              <i class="fab fa-html5"></i>
+            </div>
+            <div class="skill-info">
+              <h4>HTML</h4>
+              <span>Semantics</span>
+            </div>
+          </div>
+          <!-- CSS -->
+          <div class="skill-card" data-category="tech">
+            <div class="skill-icon-wrapper">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="skill-info">
+              <h4>CSS</h4>
+              <span>Styling & FX</span>
+            </div>
+          </div>
+          <!-- Database -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon-wrapper">
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="skill-info">
+              <h4>Database</h4>
+              <span>SQL & queries</span>
+            </div>
+          </div>
+          <!-- Excel -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon-wrapper">
+              <i class="fas fa-file-excel"></i>
+            </div>
+            <div class="skill-info">
+              <h4>Excel</h4>
+              <span>Data Analysis</span>
+            </div>
+          </div>
+          <!-- PowerPoint -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon-wrapper">
+              <i class="fas fa-file-powerpoint"></i>
+            </div>
+            <div class="skill-info">
+              <h4>PowerPoint</h4>
+              <span>Presentations</span>
+            </div>
+          </div>
+          <!-- Positive Attitude -->
+          <div class="skill-card" data-category="soft">
+            <div class="skill-icon-wrapper">
+              <i class="fas fa-smile"></i>
+            </div>
+            <div class="skill-info">
+              <h4>Positive Attitude</h4>
+              <span>Professional</span>
+            </div>
+          </div>
+          <!-- Team Work -->
+          <div class="skill-card" data-category="soft">
+            <div class="skill-icon-wrapper">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="skill-info">
+              <h4>Teamwork</h4>
+              <span>Collaboration</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title scroll-animate">Featured Projects</h2>
+        
+        <div class="projects-grid scroll-animate delay-2">
+          
+          <!-- Project 1 -->
+          <div class="project-card glass-card">
+            <div class="project-img-wrapper">
+              <div class="project-placeholder-img">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <span class="project-tag">Frontend</span>
+            </div>
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">
+              Developed a highly responsive and visually gorgeous portfolio website to showcase my achievements, academic trajectory, skills, and certifications. Optimized loading speeds and ensured compatibility across all mobile and desktop screen widths.
+            </p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Vanilla JS</span>
+              <span>Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Source</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2 class="section-title scroll-animate">Certifications</h2>
+        
+        <div class="certs-grid scroll-animate delay-2">
+          
+          <!-- Cert 1 -->
+          <div class="cert-card glass-card">
+            <div class="cert-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="cert-info">
+              <span class="cert-issuer">EY & Microsoft</span>
+              <h4>AI Skills Passport</h4>
+              <p class="cert-desc">Training program covering core architectures of Artificial Intelligence, cognitive models, and collaborative computing infrastructures.</p>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card glass-card">
+            <div class="cert-icon">
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <div class="cert-info">
+              <span class="cert-issuer">Savory Minds</span>
+              <h4>Advance Ethical Hacking</h4>
+              <p class="cert-desc">A comprehensive 3-day workshop tackling system penetration analysis, network vulnerabilities mapping, and security countermeasures.</p>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card glass-card">
+            <div class="cert-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="cert-info">
+              <span class="cert-issuer">Codtech IT Solutions</span>
+              <h4>Machine Learning</h4>
+              <p class="cert-desc">Practical coursework resolving prediction modeling, regression analysis, cluster grouping, and dataset validation techniques.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title scroll-animate">Contact Me</h2>
+        
+        <div class="contact-grid">
+          
+          <div class="contact-info-panel glass-card scroll-animate">
+            <h3>Let's Connect</h3>
+            <p>
+              I am open to discuss projects, internships, collaborations, or general technology conversations. Feel free to reach out via any of the channels below!
+            </p>
+            
+            <div class="contact-methods">
+              <!-- Email -->
+              <div class="contact-method-item">
+                <div class="contact-method-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-method-details">
+                  <span>Email</span>
+                  <a href="mailto:charantej.gowravam26@gmail.com">charantej.gowravam26@gmail.com</a>
+                </div>
+              </div>
+              
+              <!-- Phone -->
+              <div class="contact-method-item">
+                <div class="contact-method-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-method-details">
+                  <span>Phone</span>
+                  <a href="tel:9391996958">9391996958</a>
+                </div>
+              </div>
+              
+              <!-- Location -->
+              <div class="contact-method-item">
+                <div class="contact-method-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-method-details">
+                  <span>Location</span>
+                  <p>Nellore, Andhra Pradesh, India</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+              <a href="https://linkedin.com/in/gowravam-charantej" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:charantej.gowravam26@gmail.com" class="social-icon" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="contact-form-panel glass-card scroll-animate delay-2">
+            <form class="contact-form" id="contactForm">
+              
+              <div class="form-group">
+                <input type="text" id="formName" class="form-input" placeholder=" " required>
+                <label for="formName" class="form-label">Full Name</label>
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="formEmail" class="form-input" placeholder=" " required>
+                <label for="formEmail" class="form-label">Email Address</label>
+              </div>
+
+              <div class="form-group">
+                <input type="text" id="formSubject" class="form-input" placeholder=" " required>
+                <label for="formSubject" class="form-label">Subject</label>
+              </div>
+
+              <div class="form-group">
+                <textarea id="formMessage" class="form-input" placeholder=" " required></textarea>
+                <label for="formMessage" class="form-label">Your Message</label>
+              </div>
+
+              <div id="formStatus" class="form-status"></div>
+
+              <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <a href="#" class="footer-logo">Charantej</a>
+      
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+      
+      <div class="footer-copyright">
+        &copy; 2026 Gowravam Charantej. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
