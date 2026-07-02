@@ -300,8 +300,8 @@
               <span>Responsive</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i> Source</a>
-              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+              <a href="https://github.com/charantej2006/charantej-portfolio" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Portfolio Repository on GitHub" title="View Portfolio Repository on GitHub"><i class="fab fa-github" style="font-size: 1.4rem;"></i></a>
+              <a href="javascript:void(0)" class="project-link" onclick="openProjectModal()"><i class="fas fa-external-link-alt"></i> Demo</a>
             </div>
           </div>
 
@@ -474,6 +474,53 @@
       </div>
     </div>
   </footer>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div id="projectModal" class="modal-backdrop" onclick="closeProjectModal(event)">
+    <div class="project-modal-card glass-card" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+      
+      <div class="modal-header">
+        <div class="modal-tag">Featured 3D Web Application</div>
+        <h3 class="modal-title">Personal Portfolio Website</h3>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-intro">
+          A state-of-the-art, responsive personal portfolio engineered with 3D interactive visuals, glassmorphic UI components, and dynamic hardware-accelerated animations to showcase academic milestones, technical proficiency, and professional certifications.
+        </p>
+
+        <div class="modal-section">
+          <h4><i class="fas fa-star" style="color: var(--accent-primary);"></i> Key Highlights & Features</h4>
+          <ul class="modal-feature-list">
+            <li><strong>3D Mouse Tracking & Tilt:</strong> Custom real-time cursor coordinate calculations creating realistic card tilt and rotating orbital animations.</li>
+            <li><strong>Dynamic Theme Engine:</strong> Seamless dark and light mode switching with persistent local storage caching.</li>
+            <li><strong>Responsive Grid Architecture:</strong> Fluid layout adaptation ensuring zero lag and optimal readability across mobile, tablet, and widescreen viewports.</li>
+            <li><strong>Glassmorphism Aesthetics:</strong> Multi-layered translucent cards with subtle borders and glowing neon backdrops.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h4><i class="fas fa-layer-group" style="color: var(--accent-secondary);"></i> Technology Stack</h4>
+          <div class="project-tech" style="margin-bottom: 0;">
+            <span>HTML5</span>
+            <span>CSS3 (3D Transforms & Keyframes)</span>
+            <span>Vanilla JavaScript (DOM & Observers)</span>
+            <span>Git & GitHub Pages</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com/charantej2006/charantej-portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <i class="fab fa-github"></i> View GitHub Repo
+        </a>
+        <button class="btn btn-secondary" onclick="closeProjectModal()">Close</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Script -->
   <script src="script.js"></script>

@@ -271,3 +271,27 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+// --- PROJECT DETAILS MODAL ---
+window.openProjectModal = function() {
+  const modal = document.getElementById('projectModal');
+  if (modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+  }
+};
+
+window.closeProjectModal = function(event) {
+  const modal = document.getElementById('projectModal');
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = ''; // Restore scrolling
+  }
+};
+
+// Close modal on Escape key press
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    window.closeProjectModal();
+  }
+});
