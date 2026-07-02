@@ -261,18 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // WEB3FORMS CONFIGURATION
       // Paste your free access key from https://web3forms.com inside the quotes:
       // =========================================================================
-      const access_key = "YOUR_ACCESS_KEY_HERE";
-
-      if (access_key === "YOUR_ACCESS_KEY_HERE") {
-        // Fallback simulation until user adds their real Web3Forms key
-        setTimeout(() => {
-          formStatus.className = 'form-status success';
-          formStatus.textContent = `Thank you, ${name}! Your message has been sent successfully!`;
-          contactForm.reset();
-          setTimeout(() => { formStatus.style.display = 'none'; }, 5000);
-        }, 1200);
-        return;
-      }
+      const access_key = "b9df3c5e-8232-4add-b962-27d1c2984d8b";
 
       try {
         const response = await fetch("https://api.web3forms.com/submit", {
