@@ -236,37 +236,80 @@ document.addEventListener('DOMContentLoaded', () => {
   const formStatus = document.getElementById('formStatus');
 
   if (contactForm && formStatus) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+
+      // Collect field values
+      const name = document.getElementById('formName').value.trim();
+      const email = document.getElementById('formEmail').value.trim();
+      const subject = document.getElementById('formSubject').value.trim();
+      const message = document.getElementById('formMessage').value.trim();
+
+      if (!name || !email || !subject || !message) {
+        formStatus.className = 'form-status error';
+        formStatus.textContent = 'Please fill out all fields before sending.';
+        formStatus.style.display = 'block';
+        return;
+      }
 
       // Show temporary sending status
       formStatus.className = 'form-status success';
       formStatus.textContent = 'Sending message...';
       formStatus.style.display = 'block';
 
-      // Simulating network request
-      setTimeout(() => {
-        // Collect field values
-        const name = document.getElementById('formName').value;
-        const email = document.getElementById('formEmail').value;
-        const subject = document.getElementById('formSubject').value;
-        const message = document.getElementById('formMessage').value;
+      // =========================================================================
+      // WEB3FORMS CONFIGURATION
+      // Paste your free access key from https://web3forms.com inside the quotes:
+      // =========================================================================
+      const access_key = "YOUR_ACCESS_KEY_HERE";
 
-        if (name && email && subject && message) {
+      if (access_key === "YOUR_ACCESS_KEY_HERE") {
+        // Fallback simulation until user adds their real Web3Forms key
+        setTimeout(() => {
           formStatus.className = 'form-status success';
-          formStatus.textContent = `Thank you, ${name}! Your message has been sent successfully.`;
+          formStatus.textContent = `Thank you, ${name}! Your message has been sent successfully!`;
+          contactForm.reset();
+          setTimeout(() => { formStatus.style.display = 'none'; }, 5000);
+        }, 1200);
+        return;
+      }
+
+      try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            access_key: access_key,
+            name: name,
+            email: email,
+            subject: subject,
+            message: message,
+            from_name: "Portfolio Website Contact Form"
+          })
+        });
+
+        const result = await response.json();
+
+        if (response.status === 200 && result.success) {
+          formStatus.className = 'form-status success';
+          formStatus.textContent = `Thank you, ${name}! Your message has been sent successfully. I will get back to you soon!`;
           contactForm.reset();
         } else {
           formStatus.className = 'form-status error';
-          formStatus.textContent = 'Something went wrong. Please check all fields and try again.';
+          formStatus.textContent = result.message || 'Something went wrong while sending. Please try again.';
         }
+      } catch (error) {
+        formStatus.className = 'form-status error';
+        formStatus.textContent = 'Network error. Please check your internet connection and try again.';
+      }
 
-        // Fade out success notification after 5 seconds
-        setTimeout(() => {
-          formStatus.style.display = 'none';
-        }, 5000);
-
-      }, 1200);
+      // Fade out notification after 6 seconds
+      setTimeout(() => {
+        formStatus.style.display = 'none';
+      }, 6000);
     });
   }
 
